@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Construção</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #d6dce6 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        
+        .construction-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 85%;
+            max-width: 500px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: #00274C;
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        p {
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background: #FFB81C;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px #FFB81C;
+        }
+        
+        .contact-btn:hover {
+            background: #fab115;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px #ce9009;
+        }
+        
+        .construction-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="construction-container">
+        <div class="construction-icon">🔨</div>
+        <h1>Página em Construção</h1>
+        <p>Aqui por enquanto não tem rede social não :D</p>
+        <a href="ui_index.html" class="contact-btn">Voltar a Página da GM</a>
+    </div>
+</body>
+</html>
